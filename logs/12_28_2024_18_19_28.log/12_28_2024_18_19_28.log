@@ -1,0 +1,12 @@
+[ 2024-12-28 18:19:29,608 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-12-28 18:19:29,618 ] 97 werkzeug - INFO -  * Debugger PIN: 131-301-101
+[ 2024-12-28 18:19:30,229 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /static/loss-icon.png HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,231 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /static/gain-icon.png HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,534 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/6/2 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,534 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/5/2 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,541 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/4/2 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,545 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/3/2 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,546 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/2/2 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,548 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/0/3 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:30,849 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:19:30] "[33mGET /ticker/1/3 HTTP/1.1[0m" 404 -
+[ 2024-12-28 18:19:39,115 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\sanju\\Downloads\\Predicting-Student-Performance-Using-Machine-Learning-main (1)\\Predicting-Student-Performance-Using-Machine-Learning-main\\stud_updates.py', reloading

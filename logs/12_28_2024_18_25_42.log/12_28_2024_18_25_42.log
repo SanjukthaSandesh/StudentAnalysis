@@ -1,0 +1,6 @@
+[ 2024-12-28 18:25:42,889 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-12-28 18:25:42,899 ] 97 werkzeug - INFO -  * Debugger PIN: 131-301-101
+[ 2024-12-28 18:25:57,616 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:25:57] "POST /predictdata HTTP/1.1" 200 -
+[ 2024-12-28 18:25:57,731 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:25:57] "[36mGET /static/css/styles_home.css HTTP/1.1[0m" 304 -
+[ 2024-12-28 18:26:10,410 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:26:10] "GET / HTTP/1.1" 200 -
+[ 2024-12-28 18:26:10,704 ] 97 werkzeug - INFO - 127.0.0.1 - - [28/Dec/2024 18:26:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
