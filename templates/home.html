@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_home.css') }}">
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://github.com/SanjukthaSandesh/knowlytics--Predictive-Al-for-student-Mastery" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Student Exam Performance Indicator</h1>
+    
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="ethnicity">Race or Ethnicity</label>
+                <select id="ethnicity" name="ethnicity" required>
+                    <option value="" disabled selected>Select Ethnicity</option>
+                    <option value="group A">Group A</option>
+                    <option value="group B">Group B</option>
+                    <option value="group C">Group C</option>
+                    <option value="group D">Group D</option>
+                    <option value="group E">Group E</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="parent-education">Parental Level of Education</label>
+                <select id="parent-education" name="parental_level_of_education" required>
+                    <option value="" disabled selected>Select Parent Education</option>
+                    <option value="associate's degree">Associate's Degree</option>
+                    <option value="bachelor's degree">Bachelor's Degree</option>
+                    <option value="high school">High School</option>
+                    <option value="master's degree">Master's Degree</option>
+                    <option value="some college">Some College</option>
+                    <option value="some high school">Some High School</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="lunch">Lunch Type</label>
+                <select id="lunch" name="lunch" required>
+                    <option value="" disabled selected>Select Lunch Type</option>
+                    <option value="free/reduced">Free/Reduced</option>
+                    <option value="standard">Standard</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="test-course">Test Preparation Course</label>
+                <select id="test-course" name="test_preparation_course" required>
+                    <option value="" disabled selected>Select Test Course</option>
+                    <option value="none">None</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="reading-score">Writing Score out of 100</label>
+                <input id="reading-score" type="number" name="reading_score" placeholder="Enter your Reading score" min="0" max="100" />
+            </div>
+            
+            <div class="form-group">
+                <label for="writing-score">Reading Score out of 100</label>
+                <input id="writing-score" type="number" name="writing_score" placeholder="Enter your Reading Score" min="0" max="100" />
+            </div>
+
+            <div class="form-group">
+                <label for="math-score">Math Score out of 100</label>
+                <input id="math-score" type="number" name="overall" placeholder="Enter your Math Score" min="0" max="100" />
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="study-time">Study Time</label>
+                <input id="study-time" type="number" name="study_time" placeholder="Enter the number of hours studied per day" min="1" max="11" />
+            </div>
+
+            <div class="form-group">
+                <label for="screen-time">Screen time</label>
+                <input id="screen-time" type="number" name="screen_time" placeholder="Enter your screen time" min="1" max="9" />
+            </div>
+
+            <div class="form-group">
+                <label for="health">health</label>
+                <select id="health" name="health" required>
+                    <option value="" disabled selected>Health</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="going_out_with_friends">Going Out With Friends</label>
+                <select id="going_out_with_friends" name="going_out_with_friends" required>
+                    <option value="" disabled selected>Going Out With Friends</option>
+                    <option value="Often">often</option>
+                    <option value="Sometimes">sometimes</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Never">Never</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="absences">absences</label>
+                <input id="absences" type="number" name="absences" placeholder="Enter the number of holidays taken" min="0" max="20" />
+            </div>
+
+            <div class="form-group">
+                <label for="failure">failure</label>
+                <input id="failure" type="number" name="failure" placeholder="failure" min="0" max="1" />
+            </div>
+
+            <div class="form-group">
+                <label for="cience_score">cience_score</label>
+                <input id="cience_score" type="number" name="cience_score" placeholder="cience_score" min="0" max="100" />
+            </div>
+
+            <div class="form-group">
+                <label for="activities">activities</label>
+                <select id="activities" name="activities" required>
+                    <option value="" disabled selected>activities</option>
+                    <option value="Participates">participates</option>
+                    <option value="Doesnt Pareticipate">Doesnt Participate</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="romantic">romantic</label>
+                <select id="romantic" name="romantic" required>
+                    <option value="" disabled selected>romantic</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="travel_time">travel_time</label>
+                <select id="travel_time" name="travel_time" required>
+                    <option value="" disabled selected>travel_time</option>
+                    <option value="&lt 15 min">Less Than 15 min</option>
+                    <option value="15-30 min">15-30 min</option>
+                    <option value="30-60 min">30-60 min</option>
+                    <option value="&gt 60 min">Greater than 60 min</option>
+
+
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input class="btn-primary" type="submit" value="Predict your Overall Performance" required />
+            </div>
+        </form>
+        
+        <h2>
+            The prediction is {{results}}
+        </h2>
+    </div>
+</body>
+</html>
